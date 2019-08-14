@@ -1,0 +1,6 @@
+https://codepen.io/
+
+Random number seeder:
+Get a number for each letter in the name, then add them up. Use the result as a seed.
+Should be a good programming challenge too.
+Include a Just Do It button and generate a seed based on the timestamp.
