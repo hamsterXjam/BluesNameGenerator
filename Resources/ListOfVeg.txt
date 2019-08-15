@@ -1,0 +1,45 @@
+artichoke
+aubergine
+asparagus
+bean sprout
+black bean
+chickpea
+kidney bean
+lentil
+mung bean
+pea
+broccoli
+brussels sprout
+cabbage
+cauliflower
+celery
+endive
+bok choy
+spinach
+basil
+coriander
+oregano
+parsley
+lettuce
+mushroom
+okra
+onion
+Garlic
+Leek
+shallot
+beetroot
+mangel-wurzel
+carrot
+celeriac
+parsnip
+radish
+potato
+sweet potato
+yam
+turnip
+butternut squash
+courgette
+cucumber
+marrow
+tomato
+watercress
