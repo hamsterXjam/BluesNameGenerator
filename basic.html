@@ -1,13 +1,33 @@
+<!DOCTYPE html>
 <html>
     <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
         <script type="text/javascript">
+        function randomiser()
+		{
+			var output = Math.floor(Math.random() * 6) + 1;
+			return output;
+		}
         
-        
+		function fillRandom()
+		{
+			document.getElementById("testContent").innerHTML = "You rolled the dice and got: " + this.randomiser();
+		}
         
         </script>
 
     </head>
     <body>
-
+		<div class="jumbotron text-center">
+			<h1 class="display-1">Basic Proving Ground</h1>
+		</div>
+		<div class="container border rounded-lg">
+			<h2>Test Content</h2>
+			<div id="testContent">&nbsp;</div>
+			<button type="button" class="btn btn-outline-primary" onclick="fillRandom()">Roll the dice...</button>
+		</div>
     </body>
 </html>
