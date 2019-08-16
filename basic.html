@@ -4,19 +4,49 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		
+		<script type="text/javascript">
+		// var testArray = [
+		// 	"Sceptic",
+		// 	"Unhygienic",
+		// 	"Depressive",
+		// 	"Blind",
+		// 	"Deaf",
+		// 	"Lame",
+		// 	"Bubonic",
+		// 	"Bilious",
+		// 	"Coughing",
+		// 	"Infected",
+		// 	"Infested"
+		// ];
 
-        <script type="text/javascript">
-        function randomiser()
-		{
-			var output = Math.floor(Math.random() * 6) + 1;
-			return output;
-		}
-        
+        // function randomiser()
+		// {
+		// 	var output = randomiserPlus(6);
+		// 	return output + 1;
+		// }
+		
+		// function randomiserPlus(top)
+		// {
+		// 	return Math.floor(Math.random() * top);
+		// }
+
 		function fillRandom()
 		{
 			document.getElementById("testContent").innerHTML = "You rolled the dice and got: " + this.randomiser();
 		}
-        
+		
+		function GetAffliction()
+		{
+			var arrayTop = testArray.length;
+			var rnd = randomiserPlus(arrayTop);
+			document.getElementById("testAffliction").innerHTML = "Length of array = " + arrayTop;
+			document.getElementById("testAffliction").innerHTML += "<br />"
+			document.getElementById("testAffliction").innerHTML += "Getting number: " + rnd;
+			document.getElementById("testAffliction").innerHTML += "<br />"
+			document.getElementById("testAffliction").innerHTML += "You have been cursed. You are now " + testArray[rnd];
+
+		}
         </script>
 
     </head>
@@ -29,5 +59,12 @@
 			<div id="testContent">&nbsp;</div>
 			<button type="button" class="btn btn-outline-primary" onclick="fillRandom()">Roll the dice...</button>
 		</div>
+		<br />
+		<div class="container border rounded-lg">
+			<h3>Get Afflicted</h3>
+			<div id="testAffliction">&nbsp;</div>
+			<button type="button" class="btn btn-outline-primary" onclick="GetAffliction()">Afflict me</button>
+		</div>
+		<script type="text/javascript" src="js/functions.js"></script>
     </body>
 </html>
