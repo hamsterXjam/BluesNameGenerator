@@ -67,16 +67,22 @@
 			var topFruit = fruits.length;
 			var topVeg = veg.length;
 			var topCurse = afflictions.length;
-			
-			var fruityNumber = Math.floor(rng() * topFruit);
-			document.getElementById("fruitbox").innerHTML = "Your fruity number = " + fruityNumber;
-			
-			var vegNumber = Math.floor(rng() * topVeg);
-			document.getElementById("vegbox").innerHTML = "Your veg number = " + vegNumber;
+			var topPrez = prez.length;
 			
 			var curseNumber = Math.floor(rng() * topCurse);
 			document.getElementById("cursebox").innerHTML = "Your affliction number = " + curseNumber;
-			document.getElementById("result").innerHTML = fruits[fruityNumber] + " " + veg[vegNumber] + " " + afflictions[curseNumber];
+
+			var fruityNumber = Math.floor(rng() * topFruit);
+			document.getElementById("fruitbox").innerHTML = "Your fruity number = " + fruityNumber;
+			
+			// var vegNumber = Math.floor(rng() * topVeg);
+			// document.getElementById("vegbox").innerHTML = "Your veg number = " + vegNumber;
+			
+			var prezNumber =  Math.floor(rng() * topPrez);
+			document.getElementById("prezbox").innerHTML = "Your presidential number = " + prezNumber;
+			
+			// so your lucky blues name is...
+			document.getElementById("result").innerHTML = "Your lucky Blues name is: " + afflictions[curseNumber] + " " + fruits[fruityNumber] + " " + prez[prezNumber];
 			nameBox.value = "";
 		}
 		
@@ -106,9 +112,11 @@
 			<div id="testSeedRandom">&nbsp;</div>
 			<button type="button" class="btn btn-outline-primary" onclick="TestRandomWithSeed()">Test Random With Seed</button>
 			<button type="button" class="btn btn-outline-primary" onclick="HitMe()">Hit Me!</button>
-			<div id="fruitbox"></div>
-			<div id="vegbox"></div>
 			<div id="cursebox"></div>
+			<div id="fruitbox"></div>
+			<!-- <div id="vegbox"></div> -->
+			<div id="prezbox"></div>
+			
 			<div id="result"></div>
 		</div>
 		<script type="text/javascript" src="js/functions.js"></script>
