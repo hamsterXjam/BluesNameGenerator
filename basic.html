@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.3/seedrandom.min.js"></script>
+
 		<script type="text/javascript">
 		// var testArray = [
 		// 	"Sceptic",
@@ -47,6 +48,38 @@
 			document.getElementById("testAffliction").innerHTML += "You have been cursed. You are now " + testArray[rnd];
 
 		}
+		
+		function TestRandomWithSeed()
+		{
+			//debugger;
+			var nameBox = document.getElementById("name");
+			
+			//var seedValue = "This is a seed value"
+			var seededRandom = new Math.seedrandom(nameBox.value);
+			document.getElementById("testSeedRandom").innerHTML = "And your lucky random number is: " + seededRandom();
+			nameBox.value = "";
+		}
+		
+		function HitMe()
+		{
+			var nameBox = document.getElementById("name");
+			var rng = new Math.seedrandom(nameBox.value);
+			var topFruit = fruits.length;
+			var topVeg = veg.length;
+			var topCurse = afflictions.length;
+			
+			var fruityNumber = Math.floor(rng() * topFruit);
+			document.getElementById("fruitbox").innerHTML = "Your fruity number = " + fruityNumber;
+			
+			var vegNumber = Math.floor(rng() * topVeg);
+			document.getElementById("vegbox").innerHTML = "Your veg number = " + vegNumber;
+			
+			var curseNumber = Math.floor(rng() * topCurse);
+			document.getElementById("cursebox").innerHTML = "Your affliction number = " + curseNumber;
+			document.getElementById("result").innerHTML = fruits[fruityNumber] + " " + veg[vegNumber] + " " + afflictions[curseNumber];
+			nameBox.value = "";
+		}
+		
         </script>
 
     </head>
@@ -64,6 +97,19 @@
 			<h3>Get Afflicted</h3>
 			<div id="testAffliction">&nbsp;</div>
 			<button type="button" class="btn btn-outline-primary" onclick="GetAffliction()">Afflict me</button>
+		</div>
+		<br />
+		<div class="container border rounded-lg">
+			<h4>Testing seeded random number</h4>
+			<label for="name">Enter your name please</label>
+			<input id="name"/>
+			<div id="testSeedRandom">&nbsp;</div>
+			<button type="button" class="btn btn-outline-primary" onclick="TestRandomWithSeed()">Test Random With Seed</button>
+			<button type="button" class="btn btn-outline-primary" onclick="HitMe()">Hit Me!</button>
+			<div id="fruitbox"></div>
+			<div id="vegbox"></div>
+			<div id="cursebox"></div>
+			<div id="result"></div>
 		</div>
 		<script type="text/javascript" src="js/functions.js"></script>
     </body>

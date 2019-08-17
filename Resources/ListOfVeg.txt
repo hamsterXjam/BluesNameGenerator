@@ -1,45 +1,45 @@
-artichoke
-aubergine
-asparagus
-bean sprout
-black bean
-chickpea
-kidney bean
-lentil
-mung bean
-pea
-broccoli
-brussels sprout
-cabbage
-cauliflower
-celery
-endive
-bok choy
-spinach
-basil
-coriander
-oregano
-parsley
-lettuce
-mushroom
-okra
-onion
+Artichoke
+Aubergine
+Asparagus
+Bean Sprout
+Black Bean
+Chickpea
+Kidney Bean
+Lentil
+Mung Bean
+Pea
+Broccoli
+Brussels Sprout
+Cabbage
+Cauliflower
+Celery
+Endive
+Bok Choy
+Spinach
+Basil
+Coriander
+Oregano
+Parsley
+Lettuce
+Mushroom
+Okra
+Onion
 Garlic
 Leek
-shallot
-beetroot
-mangel-wurzel
-carrot
-celeriac
-parsnip
-radish
-potato
-sweet potato
-yam
-turnip
-butternut squash
-courgette
-cucumber
-marrow
-tomato
-watercress
+Shallot
+Beetroot
+Mangel-wurzel
+Carrot
+Celeriac
+Parsnip
+Radish
+Potato
+Sweet Potato
+Yam
+Turnip
+Butternut Squash
+Courgette
+Cucumber
+Marrow
+Tomato
+Watercress

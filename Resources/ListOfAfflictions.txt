@@ -20,6 +20,7 @@ Allergic
 Anaemic
 Flatulent
 Neurotic
+Gastroenteritis
 Manic
 Congested
 Ingrown Toenail
@@ -32,3 +33,31 @@ Phobic
 Narcoleptic
 Constipated
 Gout-ridden
+Sneezing
+Bald
+Restless Legs
+Conjunctivitis
+Athlete's Foot
+Halitosis
+Mad Cow Disease
+Chickenpox
+Gallstones
+Dermatitis
+Weeping Sores
+Pubic Lice
+Diarrhoea
+Shingles
+Dislocated Shoulder
+Warty
+Fungal Infection
+Bleeding Gums
+Varicose Veins
+Tonsilitis
+Vomiting
+Bunions
+Hiccuping
+Irritable Bowel Syndrome
+Impetigo
+Tennis Elbow
+Jaundice
+Scabies
